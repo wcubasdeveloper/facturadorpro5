@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/restaurant",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Restaurant\\Providers\\RestaurantServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Restaurant\\": ""
+        }
+    }
+}

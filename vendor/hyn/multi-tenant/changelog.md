@@ -1,0 +1,164 @@
+- 5.3.1
+    - #627, allowing custom database drivers.
+    - #636, fixed exit codes not being seeded in `tenancy:run` command.
+- 5.3.0
+    - Laravel 5.7 compatibility.
+    - Abort without hostname now set to false by default.
+    - #563, Fixed hardcoded tables for hostnames and websites in validator.
+    - #568, Added a `tenancy:run` command which allows using any artisan command within a tenancy switched environment.
+    - #584, Fixed issue where the route helpers would not read tenants.php routes.
+    - #595, disable bubble option in TenantAwareLogger.
+    - #603, Added support for storing tenants in different schemas in PostgreSQL.
+    - #612, Set charset and collation for new tenant database
+    - #613, Fix setting grants for users when we don't create users for tenant databases.
+- 5.2.7
+    - #579, allow configuring the middlewares used by the package
+    - Fixed issue with seed command not using the configured seed class.
+    - #577, fixed Directory class having invalid return value (Collection should be array).
+    - Minor tenancy.php configuration phpdoc changes for clarification and/or fixing.
+    - #564, fixed FreshCommand not using Website contract but Model.
+- 5.2.6
+    - #549, setting uuid before sending to repository no longer would override the uuid.
+    - Superfluous code removed that might have set the default connection to tenant in edge cases.
+- 5.2.5
+    - #376, early identification is now default for new installations.
+    - #448, fixed recreate command in edge cases where users or databases already existed or configuration was wrong.
+    - #460, allowing disabling webserver reload and forcing the configtest.
+    - #524, added tenant aware logger.
+    - #534, added tenant aware connection trait, which makes Eloquent models use the tenant connection if it exists, otherwise the system connection.
+- 5.2.4
+    - #400, fixed issue where instantiating a model again would not override its connection to system or tenant if configured.
+- 5.2.3
+    - #540, fixed issue where hostname identification was attempted inside cli/artisan.
+- 5.2.2
+    - Fixes an issue with disk resolving, once the tenant disk has been configured it would be stored in the manager. Any additional tenant identifications would not set the disk.
+- 5.2.1
+    - #532, fixed tenant routes.php overriding global ones.
+    - Now allowing tenant routes with manual identification if it happens early in the request cycle (register of sp or middlewares).
+- 5.2.0
+    - The tenancy:install command has been removed.
+    - #483, dropped Customer object.
+    - Added Tenant contract and assigning it to Website when identified.
+    - The TenantAwareJob now uses `onTenant()` and the `website_id`.
+    - Tests now reset state; deleting tenant databases.
+    - clean-local-dbs bash script no longer throws errors
+    - FindById in WebsiteRepository now allows string and int, which is possible for eloquent models.
+    - #399, tenant filesystem disk no longer automatically instantiated.
+    - #399, allowing local-only tenant overrides like config and vendor to be disabled by setting `tenancy.website.disk` to false.
+    - #502, allowing `routes/tenants.php` to override or replace global routes whenever a tenant is identified (required auto identification).
+    - System models are now soft deleting (which was the intention).
+    - Added a `Connection::exists` method to allow checking whether a connection has been set up.
+    - Dropped all references to old/unused SSL features.
+    - Added `tenancy:migrate:fresh` command.
+- 5.1.17
+    - #503, adds event when connection is set.
+- 5.1.16
+    - #489, fixes hostname actions when tenant hasn't been identified yet.
+- 5.1.15
+    - #485, setting app.url from previous release now fixed due to missing %s in sprintf.
+- 5.1.14
+    - #481, HostnameActions middleware now sets `app.url` configuration key to the tenant if enabled.
+    - #478, fixes an issue of no `$host` when deleting websites.
+    - #474, seed command now takes configured seed class as default.
+    - #477, when loading config files, only use .php files.
+    - #440, whenever Hostname is modified outside of repository, flush cache.
+- 5.1.13
+    - Patched the PostgreSQL driver when in CLI.
+    - Now registering website uuid on set tenant connection.
+- 5.1.12
+    - Re-introduced the ability to use tenant views.
+- 5.1.11
+    - Fixed an issue with CurrentHostname resolving introduced in 5.1.10.
+    - Reduced queries to system database when not yet installed.
+- 5.1.10
+    - Added support for MySQL 8 in our tests.
+    - Moved CurrentHostname resolving to its own Service Provider so that it will be properly loaded on request.
+- 5.1.9
+    - Added Macroable trait for easier extending to Environment, Directory and Connection.
+    - Added two new configuration items `tenancy.db.force-tenant-connection-of-models` and `tenancy.db.force-system-connection-of-models` to force models from third party packages you have little control over onto the tenant or system connection.
+- 5.1.8
+    - Removed all directory separators, this is unnecessary as the filesystem driver takes care of that.
+- 5.1.7
+    - Fixes a multi database issue where the secondary connection would not be used properly for setting up databases.
+- 5.1.6
+    - Fixes a multi database issue where the Website would be created on the secondary system database.
+- 5.1.5
+    - Fixes issue with tenants not being created properly on different database servers.
+- 5.1.3 & 5.1.4
+    - Fixed typo in nginx vhost file.
+    - Fixed the tenancy:db:refresh command.
+    - Now using configured `tenancy.db.tenant-seed-class` for seed related commands.
+    - MySQL/MariaDB user creation and deletion fixed.
+    - Made configurable whether to auto create and delete tenant database users.
+    - Fixed Content-Type on fallback Media Controller.
+- 5.1.2
+    - Changing flush to forget on cache. Thus preventing the full Laravel cache from being flushed.
+- 5.1.1
+    - Added a fallback media handler. In case you're not using the packaged apache or nginx vhost configurations.
+- 5.1.0
+    - Removed need for tenancy.json in laravel docroot, it now checks database.
+    - Updated terminology in TenantAwareJob, $tenant_id is now $hostname_id.
+    - Improved translation file loading for tenants. Override global now properly works.
+    - Fixed issue with prefixed routes, which have never worked.
+    - Moved to Laravel 5.6 support for this version.
+    - Added onHostname to specify the hostname on job creation.
+    - Fix tests to use repositories so databases will be deleted.
+    - Fixed apache config having an incorrect alias.
+- 5.0.17
+    - Fixed auto identification due to incorrect CurrentHostname resolving.
+- 5.0.16
+    - Squashed some minor typography issues.
+    - Updating event for website now triggers services to rebuild.
+- 5.0.15
+    - Added an artisan command `tenancy:restore` that restores tenant database/schemas/user/password given that the system database is intact.
+- 5.0.14
+    - Added ability to identify the tenant early, see tenancy.php > hostname > early-identification.
+    - Ability to make Jobs tenant aware by applying the TenantAwareJob trait, which replaces the SerializesModels trait.
+    - Some minor fixes and house keeping.
+- 5.0.13
+    - Fixed issue with overriding configs from tenant directories.
+    - Fixed missing import for Process class in Nginx generator.
+    - Running tests under production allows us to test migrations to be working.
+- 5.0.12
+    - Re-added deprecated migration name to prevent issues on existing installations.
+- 5.0.11
+    - Fixed running the migrations.
+- 5.0.10
+    - #306, dropped tenant-migration connection for seeding and migrations.
+    - Clean up of code in TenancyProvider and other files.
+    - #307, undo auto publishing of migrations.
+- 5.0.9
+    - Fixed issue where webserver process wasn't restarted.
+    - Fixed link in readme to packagist.
+    - Fixed relation for Customer.
+- 5.0.8
+    - Facade "Tenancy" resolving the Environment class added.
+- 5.0.7
+    - Allowing to configure the system models.
+    - Now no longer able to run migrations without --path, --realpath or 'tenancy.db.tenant-migrations-path' configuration.
+    - Set a default for 'tenancy.db.tenant-migrations-path' to point to 'database/migrations/tenant'.
+- 5.0.6
+    - Fixed code coverage.
+    - Moved logic to set Eloquent model connection to traits.
+    - Refactored some calls to use Symfony Process.
+    - Added warning about absolute path for tenant-migrations-path.
+- 5.0.5
+    - Moved to CircleCI for CI, now fully separated from GitLab.
+    - Improved validation of hostnames by allowing nullables.
+    - #284, fixed validation issue when updating hostname or website.
+    - Fixed maintenance mode in HostnameActions middleware.
+- 5.0.4
+    - Flushing cache whenever hostname fqdn or website uuid changes.
+- 5.0.3
+    - Added seed command and auto seeding of newly auto-migrated tenants.
+    - Added more strict validation.
+    - Added script to clean tenant and tenancy databases while running local tests.
+    - Fixed an issue with nginx where the media folder was incorrectly mapped.
+    - Fixed issue where tenant hostname was identified using the wrong header.
+- 5.0.2
+    - #262, allows using the tenant disk.
+    - #260, triggering events in case tenant directories are mutated.
+- 5.0.1
+    - Added initial Nginx support.
+    - Added MySQL database support, set tenancy > website > uuid-limit-length-to-32.
+- 5.0.0

@@ -1,0 +1,14 @@
+{
+    "name": "MercadoPago",
+    "alias": "mercadopago",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\MercadoPago\\Providers\\MercadoPagoServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

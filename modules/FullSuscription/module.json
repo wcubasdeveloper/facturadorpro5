@@ -1,0 +1,14 @@
+{
+    "name": "Full Suscription",
+    "alias": "full_suscription",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\FullSuscription\\Providers\\SuscriptionServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

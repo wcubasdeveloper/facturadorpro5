@@ -1,0 +1,25 @@
+{
+    "name": "eriquegasparcarlos/apiperudev",
+    "description": "",
+    "authors": [
+        {
+            "name": "Carlos Alfredo Erique",
+            "email": "eriquegasparcarlos@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ApiPeruDev\\Providers\\ApiPeruDevServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ApiPeruDev\\": ""
+        }
+    }
+}

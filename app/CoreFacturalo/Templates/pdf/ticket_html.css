@@ -1,0 +1,22 @@
+body.ticket {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+table { border-spacing: 0px;}
+table.space tr td { padding-left: 5px!important;}
+table tr td {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0px;
+    height: 1px;
+    padding: 0;
+}
+body {
+    max-width: 80cm;
+}
+
+h4, h5 {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/full_suscription",
+    "description": "",
+    "authors": [
+        {
+            "name": "Carlos Alvarado",
+            "email": "alvaradocarlot@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\FullSuscription\\Providers\\SuscriptionServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\FullSuscription\\": ""
+        }
+    }
+}

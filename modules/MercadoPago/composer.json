@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/mercadopago",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\MercadoPago\\Providers\\MercadoPagoServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MercadoPago\\": ""
+        }
+    }
+}

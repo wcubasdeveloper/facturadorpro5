@@ -1,0 +1,286 @@
+/* Default */
+
+/* header */
+html:not(.sidebar-ligth-blue).userbox.show .dropdown-menu a:hover {
+  background-color: #7367f0 !important;
+}
+
+/* --------------------------- tema azul celeste --------------------------- */
+/* panel izquierdo */
+html.fixed.sidebar-ligth-blue .sidebar-left,
+html.fixed.sidebar-ligth-blue .sidebar-header,
+html.fixed.sidebar-ligth-blue .sidebar-left .nano {
+    background-color: #00cfe8 !important;
+}
+html.fixed.sidebar-ligth-blue .sidebar-left a {
+    color: #fff;
+}
+html.fixed.sidebar-ligth-blue .sidebar-left a:hover,
+html.fixed.sidebar-ligth-blue .sidebar-left a:active,
+html.fixed.sidebar-ligth-blue .sidebar-left a:focus {
+    color: #fff !important;
+}
+html.fixed.sidebar-ligth-blue .sidebar-left a::after {
+    color: #fff;
+}
+html.fixed.sidebar-ligth-blue .sidebar-left a::before {
+    border-color: #fff !important;
+}
+html.fixed.sidebar-ligth-blue ul.nav-main li .nav-children li.nav-active:not(.nav-parent) > a::before {
+  background: #fff !important;
+}
+html.fixed.sidebar-ligth-blue .sidebar-left a:hover,
+html.fixed.sidebar-ligth-blue .sidebar-left a:active,
+html.fixed.sidebar-ligth-blue .sidebar-left a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+html.fixed.sidebar-ligth-blue .sidebar-left a:hover::before,
+html.fixed.sidebar-ligth-blue .sidebar-left a:active::before,
+html.fixed.sidebar-ligth-blue .sidebar-left a:focus::before,
+html.fixed.sidebar-ligth-blue .sidebar-left a:hover::after,
+html.fixed.sidebar-ligth-blue .sidebar-left a:active::after,
+html.fixed.sidebar-ligth-blue .sidebar-left a:focus::after {
+    border-color: #fff;
+    color: #fff;
+}
+html.fixed.sidebar-ligth-blue ul.nav-main li.nav-expanded > a {
+  background-color: #00a1b3;
+  color: #fff !important;
+}
+ul.fixed.sidebar-ligth-blue .nav-main > li.nav-active:not(.nav-expanded) > a {
+  border-radius: 6px 6px 6px 6px !important;
+}
+html.fixed.sidebar-ligth-blue ul.nav-main li.nav-parent > ul.nav-children {
+  background-color: #00a1b3;
+}
+html.fixed.sidebar-ligth-blue .sidebar-left a:hover, html.fixed.sidebar-ligth-blue .sidebar-left a:active, html.fixed.sidebar-ligth-blue .sidebar-left a:focus {
+  color: #fff;
+  background-color: #00a1b3;
+}
+html.fixed.sidebar-ligth-blue ul.nav-main li .nav-children li.nav-active:not(.nav-parent) > a {
+  background: #007582;
+  color: #fff !important;
+}
+html.fixed.sidebar-ligth-blue .sidebar-left-collapsed .sidebar-left .nav-main > li > a {
+  border-radius: 6px 6px 6px 6px !important;
+}
+html.sidebar-ligth-blue ul.nav-main li.nav-active:not(.nav-parent) > a {
+  background: #00a1b3;
+  box-shadow: none;
+}
+/* header */
+html.sidebar-ligth-blue .userbox.show .dropdown-menu a:hover {
+  background-color: #00cfe8;
+}
+
+
+/* --------------------------- tema morado --------------------------- */
+/* header */
+html.sidebar-blue .userbox.show .dropdown-menu a:hover {
+  background-color: #554AC6;
+}
+/* panel derecho */
+html.sidebar-blue:not(.dark) .style-switcher,
+html.sidebar-blue:not(.dark) .style-switcher .style-switcher-open {
+  background-color: #f6f6f6;
+  color: #777;
+  border-left: 3px solid #e2e3e6;
+  border-top: 3px solid #e2e3e6;
+  border-bottom: 3px solid #e2e3e6;
+}
+.sidebar-blue:not(.dark) ul.nav-main li.nav-active:not(.nav-parent) > a, .sidebar-blue:not(.dark) ul.nav-main li .nav-children li.nav-active:not(.nav-parent) > a {
+  box-shadow: none;
+}
+html.sidebar-blue:not(.dark) .style-switcher h4 {
+  background-color: #f6f6f6;
+  color: #777;
+}
+html.sidebar-blue:not(.dark) ul.nav-main li.nav-active:not(.nav-parent) > a {
+  background: #554AC6;
+  box-shadow: none;
+}
+/* cajas de contenido */
+html.sidebar-blue .card-header.bg-info {
+  background: #554AC6 !important;
+}
+
+/* --------------------------- tema verde --------------------------- */
+/* header */
+html.sidebar-green .userbox.show .dropdown-menu a:hover {
+  background-color: #1ca55a;
+}
+/* panel derecho */
+html.sidebar-green ul.nav-main li.nav-active:not(.nav-parent) > a {
+  background: #1ca55a;
+  box-shadow: none;
+}
+/* cajas de contenido */
+html.sidebar-green .card-header.bg-info {
+  background: #1ca55a !important;
+}
+
+/* --------------------------- tema rojo --------------------------- */
+/* header */
+html.sidebar-red .userbox.show .dropdown-menu a:hover {
+  background-color: #dc3545;
+}
+/* panel derecho */
+html.sidebar-red:not(.dark) .style-switcher,
+html.sidebar-red:not(.dark) .style-switcher .style-switcher-open {
+  background-color: #f6f6f6;
+  color: #777;
+  border-left: 3px solid #e2e3e6;
+  border-top: 3px solid #e2e3e6;
+  border-bottom: 3px solid #e2e3e6;
+}
+html.sidebar-red:not(.dark) .style-switcher h4 {
+  background-color: #f6f6f6;
+  color: #777;
+}
+html.sidebar-red:not(.dark) ul.nav-main li.nav-active:not(.nav-parent) > a {
+  background: #dc3545;
+  box-shadow: none;
+}
+html.sidebar-red:not(.sidebar-light) ul.nav-main li .nav-children li a:after {
+  background: #dc3545;
+}
+
+/* cajas de contenido */
+html.sidebar-red .card-header.bg-info {
+  background: #dc3545 !important;
+}
+
+/* botones */
+html.sidebar-red .el-button--primary, html.sidebar-red .btn-custom {
+  color: #FFFFFF;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+
+/* --------------------------- tema naranja --------------------------- */
+/* panel derecho */
+html.sidebar-warning ul.nav-main li.nav-active:not(.nav-parent) > a {
+  background: #dd8028;
+  box-shadow: none;
+}
+/* header */
+html.sidebar-warning .userbox.show .dropdown-menu a:hover {
+  background-color: #ff9f43;
+}
+/* cajas de contenido */
+html.sidebar-warning .card-header.bg-info {
+  background: #ff9f43 !important;
+}
+
+/* --------------------------- tema gris --------------------------- */
+/* panel derecho */
+html.fixed.sidebar-gray .sidebar-left,
+html.fixed.sidebar-gray .sidebar-header,
+html.fixed.sidebar-gray .sidebar-left .nano {
+    background-color: #82868b !important;
+}
+html.fixed.sidebar-gray .sidebar-left a {
+    color: #fff;
+}
+html.fixed.sidebar-gray .sidebar-left a:hover,
+html.fixed.sidebar-gray .sidebar-left a:active,
+html.fixed.sidebar-gray .sidebar-left a:focus {
+    color: #fff !important;
+}
+html.fixed.sidebar-gray .sidebar-left a::after {
+    color: #fff;
+}
+html.fixed.sidebar-gray .sidebar-left a::before {
+    border-color: #fff !important;
+}
+html.fixed.sidebar-gray ul.nav-main li .nav-children li.nav-active:not(.nav-parent) > a::before {
+  background: #fff !important;
+}
+html.fixed.sidebar-gray .sidebar-left a:hover,
+html.fixed.sidebar-gray .sidebar-left a:active,
+html.fixed.sidebar-gray .sidebar-left a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+html.fixed.sidebar-gray .sidebar-left a:hover::before,
+html.fixed.sidebar-gray .sidebar-left a:active::before,
+html.fixed.sidebar-gray .sidebar-left a:focus::before,
+html.fixed.sidebar-gray .sidebar-left a:hover::after,
+html.fixed.sidebar-gray .sidebar-left a:active::after,
+html.fixed.sidebar-gray .sidebar-left a:focus::after {
+    border-color: #fff;
+    color: #fff;
+}
+html.fixed.sidebar-gray ul.nav-main li.nav-expanded > a {
+  background: #707376;
+  color: #fff !important;
+}
+ul.fixed.sidebar-gray .nav-main > li.nav-active:not(.nav-expanded) > a {
+  border-radius: 6px 6px 6px 6px !important;
+}
+html.fixed.sidebar-gray ul.nav-main li.nav-parent > ul.nav-children {
+  background-color: #707376;
+}
+html.fixed.sidebar-gray .sidebar-left a:hover, html.fixed.sidebar-gray .sidebar-left a:active, html.fixed.sidebar-gray .sidebar-left a:focus {
+  color: #fff;
+  background-color: #707376;
+}
+html.fixed.sidebar-gray ul.nav-main li .nav-children li.nav-active:not(.nav-parent) > a {
+  background: #616365;
+  color: #fff !important;
+}
+html.fixed.sidebar-gray .sidebar-left-collapsed .sidebar-left .nav-main > li > a {
+  border-radius: 6px 6px 6px 6px !important;
+}
+html.sidebar-gray ul.nav-main li.nav-active:not(.nav-parent) > a {
+  background: #707376;
+  box-shadow: none;
+}
+.sidebar-gray ul.nav-main li .nav-children li:not(.nav-parent) > a,
+.sidebar-gray ul.nav-main li .nav-children li a {
+  color: #fff;
+}
+.sidebar-gray .sidebar-left a::before {
+  color: #fff;
+  border-color: #4b4b4b !important;
+}
+/* cajas de contenido */
+html.sidebar-gray .card-header.bg-info {
+  background: #707376 !important;
+}
+/* header */
+html.sidebar-gray .userbox.show .dropdown-menu a:hover {
+  background-color: #707376;
+}
+
+/* --------------------------- tema blanco --------------------------- */
+html.sidebar-white ul.nav-main li.nav-active:not(.nav-parent) > a {
+  background: #08c;
+  box-shadow: none;
+  color: #fff !important;
+}
+html.sidebar-white .card-header.bg-info {
+  background: #08c !important;
+}
+
+/* --------------------------- tema oscuro / sin modo noche --------------------------- */
+/* panel derecho */
+html.sidebar-dark:not(.dark) .style-switcher,
+html.sidebar-dark:not(.dark) .style-switcher .style-switcher-open {
+  background-color: #f6f6f6;
+  color: #777;
+  border-left: 3px solid #e2e3e6;
+  border-top: 3px solid #e2e3e6;
+  border-bottom: 3px solid #e2e3e6;
+}
+html.sidebar-dark:not(.dark) .style-switcher h4 {
+  background-color: #f6f6f6;
+  color: #777;
+}
+
+/* menu top */
+.fix-m {
+  margin-bottom: -4px;
+}

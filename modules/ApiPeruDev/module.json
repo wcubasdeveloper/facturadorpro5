@@ -1,0 +1,14 @@
+{
+    "name": "ApiPeruDev",
+    "alias": "apiperudev",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\ApiPeruDev\\Providers\\ApiPeruDevServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

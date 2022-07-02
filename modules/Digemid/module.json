@@ -1,0 +1,14 @@
+{
+    "name": "Digemid",
+    "alias": "digemid",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Digemid\\Providers\\DigemidServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

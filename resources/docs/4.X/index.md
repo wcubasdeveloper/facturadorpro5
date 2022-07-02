@@ -1,0 +1,14 @@
+- ## Módulos
+    - [Farmacia](/{{route}}/{{version}}/modulo-farmacia)
+- ## Migración
+    - [Documento individual](/{{route}}/{{version}}/migracion-de-documento-individual)
+    - [Servidor con docker](/{{route}}/{{version}}/migracion-server-docker)
+- ## PDF
+    - [Plantilla personalizada](/{{route}}/{{version}}/plantilla-pdf-personalizada)
+    - [Impresión automática](/{{route}}/{{version}}/impresion-automatica)
+- ## Validador
+    - [Configuración SUNAT](/{{route}}/{{version}}/configuracion-nuevo-validador)
+- ## Atributos para items
+  - [Stock por atributos](/{{route}}/{{version}}/stock-por-atributos)
+- ## Reportes
+  - [Instalación de supervisor](/{{route}}/{{version}}/instalacion-supervisor)
